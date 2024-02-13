@@ -6,7 +6,7 @@ spring:
       ddl-auto: update
     show-sql: true
   datasource:
-    url: jdbc:mysql://3.92.251.22:3307/ibm
+    url: jdbc:mysql://3.219.34.24:3307/ibm
     username: root
     password: root
 server:

@@ -34,6 +34,7 @@ public class TodoServiceImpl implements TodoService {
 		// TODO Auto-generated method stub
 		Optional<Todolist> result = todoRepository.findById(todoId);
 		Todolist theTodolist = null;
+		System.out.println(result.isPresent());
 		if(result.isPresent()) {
 			theTodolist = result.get();
 		}else {
