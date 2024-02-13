@@ -22,16 +22,12 @@ public class TodoServiceApplication {
 		SpringApplication.run(TodoServiceApplication.class, args);
 	}
 	
-	@PostConstruct
+	/*@PostConstruct
 	void init() {
-		List<Todolist> list = Stream.of(
-				new Todolist(TodoName.compile,true,"25-01-2024"),
-				new Todolist(TodoName.code,true,"31-01-2024"),
-				new Todolist(TodoName.test,false,"04-02-2024"),
-				new Todolist(TodoName.deploy,false,"04-02-2024")).collect(Collectors.toList());
-		for(Todolist t: list) {
-			todoRepository.save(t);
-		}
-	}
+		todoRepository.save(new Todolist(TodoName.compile,true,"25-01-2024"));
+		todoRepository.save(new Todolist(TodoName.code,true,"31-01-2024"));
+		todoRepository.save(new Todolist(TodoName.test,false,"04-02-2024"));
+		todoRepository.save(new Todolist(TodoName.deploy,false,"04-02-2024"));
+	}*/
 
 }
