@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: todo-service-app
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    url: jdbc:mysql://3.219.34.24:3307/ibm
+    username: root
+    password: root
+server:
+  port: 5000

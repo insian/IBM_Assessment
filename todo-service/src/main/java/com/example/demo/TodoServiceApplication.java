@@ -1,9 +1,5 @@
 package com.example.demo;
 
-import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -22,12 +18,12 @@ public class TodoServiceApplication {
 		SpringApplication.run(TodoServiceApplication.class, args);
 	}
 	
-	/*@PostConstruct
+	@PostConstruct
 	void init() {
 		todoRepository.save(new Todolist(TodoName.compile,true,"25-01-2024"));
 		todoRepository.save(new Todolist(TodoName.code,true,"31-01-2024"));
 		todoRepository.save(new Todolist(TodoName.test,false,"04-02-2024"));
 		todoRepository.save(new Todolist(TodoName.deploy,false,"04-02-2024"));
-	}*/
+	}
 
 }

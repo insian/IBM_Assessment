@@ -38,7 +38,8 @@ public class TodoServiceImpl implements TodoService {
 		if(result.isPresent()) {
 			theTodolist = result.get();
 		}else {
-			new TodoListNotFoundException("todo list with id "+todoId+" not found");
+			System.out.println("ABC-123");
+			throw new TodoListNotFoundException("todo list with id "+todoId+" not found");
 		}
 		return theTodolist;
 	}

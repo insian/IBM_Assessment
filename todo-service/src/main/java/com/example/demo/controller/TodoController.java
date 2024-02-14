@@ -29,6 +29,8 @@ public class TodoController {
 	@ExceptionHandler(TodoListNotFoundException.class)
 	public ErrorResponse handleException(TodoListNotFoundException e) {
 		ErrorResponse response = new ErrorResponse();
+		System.out.println(e.getMessage());
+		System.out.println("A");
 		response.setMessage(e.getMessage());
 		response.setStatusCode(HttpStatus.BAD_REQUEST.value());
 		response.setToOfError(System.currentTimeMillis());
